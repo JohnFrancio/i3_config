@@ -161,7 +161,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # lock i3
 bindsym $mod+i exec i3lock
 #shutdown the system
-bindsym $mod+o exec shutdown nowtt
+bindsym $mod+o exec shutdown now
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -215,6 +215,5 @@ for_window [window_role="task_dialog"] floating enable
 #for_window [class="mpv"] floating enable
 for_window [class="xdman-Main"] floating enable
 
-exec_always firefox --restore
 exec_always ~/.config/polybar/launch.sh &
 exec_always nitrogen --restore
